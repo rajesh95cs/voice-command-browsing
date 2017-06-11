@@ -1,0 +1,16 @@
+{
+     "background": {
+      "scripts": [ "tab.js","jquery.js" ]
+   },
+   "browser_action": {
+      "default_title": "chrome:history"
+   },
+  "name": "Improved new tab page",
+  "description": "Display bookmarks on the new tab page",
+  "version": "0.1",
+  "incognito": "split",
+  "chrome_url_overrides": {"newtab": "jj.html"},
+  "web_accessible_resources": ["text.php"],
+  "permissions": ["bookmarks","history","storage","tabs","background", "http://localhost/"],
+  "manifest_version": 2
+}
